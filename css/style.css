@@ -7,8 +7,7 @@
     font-stretch: normal;
     unicode-range: U+0020-00FE;
 }
-		
-   
+		   
 @font-face {
     font-family:'Montserrat';
     src: url('../fonts/Montserrat Regular.woff2') format('woff2'),
@@ -38,6 +37,7 @@
     font-stretch: normal;
     unicode-range: U+0020-2044;
 }
+
 @font-face {
     font-family: 'roboto_slabregular';
     src: url('../fonts/robotoslab-regular-webfont.woff2') format('woff2'),
@@ -335,12 +335,6 @@ h2 {
 .section-img {
 	background-color: #f9f9f9;
 }
-/*.row {
-не где не пригодился, может потом с расшерением контента
-}*/
-/*.img-item {
- 	
-}*/
 .circle-img {
 	width: 220px;
 	height: 220px;
@@ -363,14 +357,14 @@ h2 {
 	margin-top: 0;
 }
 .width {
-	width: 600px;
+	max-width: 600px;
 	margin: auto;
 }
 .margin-team {
 	margin: 0 5px 45px 5px;
 }
 .my-img-alex {
-	background: url(../img/AlexLavrenchuk.jpg) center no-repeat;
+	background: url(../img/alex_lavrenchuk.jpg) center no-repeat;
 	background-size: 100%;
 }
 /*//////////////*/
@@ -392,7 +386,7 @@ h2 {
  Start Contact us
 /////////////////*/
 .Contact-us {
-	background: url('../img/Map.png') no-repeat #222;
+	background: url('../img/map.png') no-repeat #222;
 	background-position: right 135px;
 
 }
@@ -596,6 +590,7 @@ footer h4 {
   opacity: .75;
   color: black;
 }
+
 /*///////////////////////////////////////*/
 
 @media (max-width: 992px){
@@ -612,9 +607,10 @@ footer h4 {
 	.section {
 		padding: 30px 15px;
 	}
-	
-/*  ////////////////////////////////  */
 }
+
+/*  ////////////////////////////////  */
+
 @media (max-width: 768px){
 	.title {
 		font-size: 34px;
@@ -702,8 +698,19 @@ footer h4 {
 	ul {
 		width: 100%;
 	}
+
 }
 /*//////////////////////////////////*/
 @media (max-width: 576px){
-
+	.row-portfolio-left,
+	.row-portfolio-right {
+		float: none;
+		width: 100%;
+	}
+	.partners img {
+		width: 49%;
+	}
+	.partners {
+		padding: 30px 0;
+	}
 }
